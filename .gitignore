@@ -5,6 +5,8 @@ npm-debug.log*
 
 # Build
 .zefir
+.dist
+.bundles
 
 # Dependency directories
 node_modules
@@ -12,3 +14,4 @@ node_modules
 # Other
 .DS_Store
 Thumbs.db
+.envrc
