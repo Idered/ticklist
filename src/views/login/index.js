@@ -1,14 +1,15 @@
-import Head from '../components/head'
-import Page from '../components/page'
+import Head from '../../components/head'
+import Page from '../../components/page'
 
 const Login = ({
   services: {
     user: {login}
   },
+  services,
   stores: {
     messages,
     pending,
-    user: {authorization}
+    login: {authorization}
   },
   form: {fields, submit}
 }) => (

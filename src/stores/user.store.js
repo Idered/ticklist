@@ -1,8 +1,8 @@
 import {computed, observable} from 'mobx'
 
 export default {
-  @observable authorization: null,
+  @observable token: null,
   @computed get isLoggedIn () {
-    return false
+    return Boolean(this.token)
   }
 }

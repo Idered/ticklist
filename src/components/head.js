@@ -1,7 +1,9 @@
-import Head from 'zefir/head'
+import ZefirHead from 'zefir/head'
 
-export default ({children}) => (
-  <Head>
+const Head = ({children}) => (
+  <ZefirHead>
     {children}
-  </Head>
+  </ZefirHead>
 )
+
+export default Head

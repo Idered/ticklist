@@ -1,4 +1,4 @@
-export default ({children}) => (
+const Page = ({children}) => (
   <div>
     {children}
 
@@ -479,3 +479,5 @@ export default ({children}) => (
     `}</style>
   </div>
 )
+
+export default Page

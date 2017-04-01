@@ -35,7 +35,7 @@ function allow (session) {
     .where('email', session.email)
     .first()
     .then(({user_key}) => {
-      channel.publish(`verify`, session.token, {user_key})
+      channel.publish(`verify.${session.token}`, {user_key})
 
       response('Logged in. You can now close this tab.')
     })

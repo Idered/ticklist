@@ -70,4 +70,4 @@ endpoints:
           exit_code: 400
           example: Invalid url
   verify:
-    channel: verify
+    channel: verify.{token}
